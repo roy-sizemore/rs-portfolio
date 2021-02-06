@@ -1,5 +1,6 @@
 body {
     padding-left: 25px;
+    background-color: rgb(137, 98, 141);
 }
 
 h1 {
@@ -10,6 +11,7 @@ h1 {
 
 .titles {
     display: flex;
+    position: relative;
     width: 20%;
     font-size: 2em;
     font-family: 'Cardo', serif;
@@ -29,11 +31,18 @@ nav {
     font-family: 'Oswald', sans-serif;
 }
 
+nav li {
+    padding-left: 25px;
+    font-size: 20px;
+}
+
 li {
     display: inline;
 }
 
 .card-big {
+    display: flex;
+    position: relative;
     flex: 1 0 0;
     padding: 10px;
     border-style: solid;
@@ -56,27 +65,45 @@ li {
 }
 
 #about-me {
-    display: inline-block;
+    display: flex;
+    position: relative;
     padding-left: 25px;
     font-size: 25px;
-    height: 150px;
-    width: 66%;
 }
 
 .container {
     display: flex;
-    flex: 1 1 1;    
+    flex: 0 1 0;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    width: 95%;
+    padding-left: 50px;
+}
+
+#my-work {
+    height: 100%;
+    width: 95%;
 }
 
 #contact-me {
+    display: flex;
+    position: relative;
     font-size: 25px;
-    padding: 25px;
+    padding-left: 25px;
 }
 
 footer {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .no-dec {
     text-decoration: none;
+    color: black;
 }
+
+.logos {
+    height: 50px;
+}
+
