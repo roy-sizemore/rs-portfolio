@@ -14,44 +14,50 @@
 </head>
 <body>
     <!-- Needs a pic here? Some kind of trim.... -->
-    <div>
-        <h1>Roy Sizemore</h1>
-        <img id="self-pic" src="/img/rjsj_1.png">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#my-work">My Work</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a> 
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div>
+            <h1>Roy Sizemore</h1>
+            <img id="self-pic" src="/img/rjsj_1.png">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="no-dec" href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a class="no-dec" href="#my-work">My Work</a>
+                    </li>
+                    <li>
+                        <a class="no-dec" href="#contact-me">Contact Me</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!-- Needs a pic here? Something benign....-->
-    <section>
-        <article>
-            <div class="titles"><h2>About Me</h2></div>
-            <p id="about-me">Placeholder text that will be filled in later.</p>
-        </article>
-        <article>
+    <div class="container">
+        <div class="titles">
+            <h2>About Me</h2>
+        </div>
+        <p id="about-me">Cybersecurity, Risk and Controls leader with 8 years of information security experience focusing on regulatory, contractual and industry-specific technology risk management and controls. Strong cross-team collaboration approach with proven ability to provide organizations direction and visibility into threat landscapes and risk profiles. Action-oriented with a strategic focus on procedure improvements and change initiatives to mitigate technology risk and manage technical debt.</p>
+    </div>
+    <div class="container">
+        <div class="titles">
             <h2>My Work</h2>
-                <div>
-                    <a href="#"><img class="card" src="/img/everyone_code.jfif" alt="banner"></a>
-                    <div class="bottom-left">My First Project (This Page)</div>
-                </div>
-        </article>
-        <article>
+        </div>
+        <div>
+            <a href="#"><img class="card-big" src="/img/everyone_code.jfif" alt="banner"></a>
+            <div class="bottom-left"><u>My First Project</u><br>This Page</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="titles">
             <h2>Contact Me</h2>
-            <ul>
-                <li><a href="mail.google.com">Email</a></li>
-                <li><a href="https://www.linkedin.com/roysizemore">LinkedIn</a></li>
-            </p>
-        </article>
-    </section>
+        </div>
+        <ul id="contact-me">
+            <li><a class="no-dec" href="https://github.com/roy-sizemore">GitHub</a></li>
+            <li><a class="no-dec" href="https://www.linkedin.com/roysizemore">LinkedIn</a></li>
+        </ul>
+    </div>
     <div>
         <footer>
             &copy; <script>copywrite();</script> Roy Sizemore, except where noted.
