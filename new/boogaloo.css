@@ -1,0 +1,96 @@
+:root {
+    --pad: 25px;
+}
+
+header {
+    justify-content: baseline;
+    background-image: url("/img/header-0.jpg");
+    margin-top: 0px;
+    width: 100%;
+    height: 300px;
+}
+
+#img-header {
+    object-fit: fill;
+    height: 5%;
+    width: 10%;
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    padding: 0px;
+    font-size: 35px;
+    font-family: 'Oswald', sans-serif;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    padding-left: var(--pad);
+}
+
+.no-dec {
+    text-decoration: none;
+    color: black;
+}
+.container {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1;
+    row-gap: 15px;
+}
+
+.titles {
+    grid-column-start: 1;
+    font-size: 2.5em;
+    font-family: 'Cardo', serif;
+    border-right: solid;
+    border-width: 8px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+}
+
+.content {
+    grid-column-start: 2;
+    font-size: 28px;
+    font-family: 'Cardo', serif;
+    padding-left: var(--pad);
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#card-large {
+    object-fit: fill;
+    height: 50%;
+    width: 98.5%;
+}
+
+.card-small {
+    object-fit: fill;
+    height: 50%;
+    width: 49%;
+}
+
+#my-name {
+    margin-top: 17px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    padding-left: var(--pad);
+}
+
+#self-pic {
+    height: 200px;
+}
+
+.logos {
+    height: 50px;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
