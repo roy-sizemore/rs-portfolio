@@ -12,13 +12,11 @@
     <script src="/scripts/app.js"></script>
     <title>Roy Sizemore's Portfolio</title>
 </head>
-<body>
-    <!-- Needs a pic here? Some kind of trim.... -->
+<body class="responsive">
     <header>
-        <div>
-            <h1>Roy Sizemore</h1>
-            <img id="self-pic" src="/img/rjsj_1.png">
-            <nav>
+        <section>
+            <h1 id="my-name">Roy Sizemore</h1>
+            <nav class="res-nav">
                 <ul>
                     <li>
                         <a class="no-dec" href="#about-me">About Me</a>
@@ -27,42 +25,35 @@
                         <a class="no-dec" href="#my-work">My Work</a>
                     </li>
                     <li>
-                        <a class="no-dec" href="#contact-me">Contact Me</a> 
+                        <a class="no-dec" href="#contact-me">Contact Me</a>
                     </li>
                 </ul>
             </nav>
-        </div>
+        </section>
+        <img id="self-pic" src="/img/rjsj_1.png">
     </header>
-    <!-- Needs a pic here? Something benign....-->
-    <div class="container">
-        <div class="titles">
-            <h2>About Me</h2>
-        </div>
-        <p id="about-me">Cybersecurity, Risk and Controls leader with 8 years of information security experience focusing on regulatory, contractual and industry-specific technology risk management and controls. Strong cross-team collaboration approach with proven ability to provide organizations direction and visibility into threat landscapes and risk profiles. Action-oriented with a strategic focus on procedure improvements and change initiatives to mitigate technology risk and manage technical debt.</p>
-    </div>
-    <div class="container">
-        <div class="titles">
-            <h2>My Work</h2>
-        </div>
-        <div>
-            <a id="my-work" href="#"><img class="card-big" src="/img/everyone_code.jfif" alt="banner"></a>
-            <div class="bottom-left"><a class="no-dec" href="#"><u>My First Project</u><br>This Page</a></div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="titles">
-            <h2>Contact Me</h2>
-        </div>
-        <ul id="contact-me">
-            <li><a class="no-dec" href="https://github.com/roy-sizemore" target="_blank"><img class="logos" src="/img/GitHub-Mark.png" alt="github logo"></a></li>
-            <li><a class="no-dec" href="https://www.linkedin.com/in/roysizemore" target="_blank"><img class="logos" src="/img/linkedin_logo.png" alt="linkedin logo"></a></li>
-        </ul>
-    </div>
-    <div>
-        <footer>
-            <!-- Logos are used within fair use rights -->
-            &copy; <script>copywrite();</script> Roy Sizemore, except where noted.
-        </footer>
-    </div>
+    <section class="container">
+        <section id="about-me" class="titles">About Me</section>
+        <article class="content">
+            <p>Cybersecurity, Risk and Controls leader with 8 years of information security experience focusing on regulatory, contractual and industry-specific technology risk management and controls. Strong cross-team collaboration approach with proven ability to provide organizations direction and visibility into threat landscapes and risk profiles. Action-oriented with a strategic focus on procedure improvements and change initiatives to mitigate technology risk and manage technical debt.</p>
+        </article>
+        <section id="my-work" class="titles">My Work</section>
+        <section class="content">
+            <a href="https://roy-sizemore.github.io/horiseon-home/" target="_blank"><img id="card-large" src="/img/everyone_code.jfif" alt="banner"></a>
+            <a href="#"><img class="card-small" src="/img/desert.jfif" alt="desert"></a>
+            <a href="#"><img class="card-small" src="/img/laptop-0.jfif" alt="laptop"></a>
+        </section>
+        <section id="contact-me" class="titles">Contact Me</section>
+        <section class="content">
+            <ul>
+                <li><a href="https://github.com/roy-sizemore" target="_blank"><img class="logos" src="/img/GitHub-Mark.png" alt="github logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/roysizemore" target="_blank"><img class="logos" src="/img/linkedin_logo.png" alt="linkedin logo"></a></li>
+            </ul>
+        </section>
+    </section>
+    <footer>
+        <!-- Logos are used within fair use rights -->
+        &copy; <script>copywrite();</script> Roy Sizemore, except where noted.
+    </footer>
 </body>
 </html>
