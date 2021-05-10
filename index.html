@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <!-- Google fonts use open source licensing. See: https://developers.google.com/fonts/faq -->
     <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Roy Sizemore's Portfolio</title>
 </head>
 <body class="responsive">
     <header>
-        <section>
-            <h1 id="my-name">Roy Sizemore</h1>
-            <nav class="res-nav">
-                <ul>
-                    <li>
-                        <a class="no-dec" href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a class="no-dec" href="#my-work">My Work</a>
-                    </li>
-                    <li>
-                        <a class="no-dec" href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#my-work">My Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact Me</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
         <img id="self-pic" src="img/rjsj_1.png">
     </header>
     <section class="container">
@@ -50,6 +54,7 @@
             </ul>
         </section>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script src="scripts/app.js"></script>
     <footer>
         <!-- Logos are used within fair use rights -->
