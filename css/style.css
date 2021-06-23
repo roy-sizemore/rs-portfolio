@@ -2,23 +2,32 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: rgb(233, 230, 255);
+}
+
 header {
-    background-image: url(../img/header-0.png);
+    background-image: url(../img/vectorstock_purple.png);
     margin-right: 0px;
     padding-left: 25px;
+}
+
+.jumbotron {
+    align-content: center;
+}
+
+#my-name {
+    /* margin-top: 17px; */
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 25px;
+    justify-self: center;
 }
 
 #self-pic {
     height: 200px;
     padding-bottom: 35px;
     padding-left: 40px;
-}
-
-#my-name {
-    margin-top: 17px;
-    font-size: 50px;
-    font-family: 'Oswald', sans-serif;
-    padding-left: 25px;
 }
 
 nav {
@@ -36,6 +45,11 @@ li {
     padding-left: 25px;
 }
 
+li > a:link {
+    text-decoration: none;
+    color: black;
+}
+
 /* .icon {
    Time constraint - day 1 feature add 
 } */
@@ -46,6 +60,7 @@ li {
 }
 
 .container {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 15% 85%;
     grid-template-rows: 1;
@@ -79,28 +94,37 @@ li {
     left: 15px;
 }
 
-#card-large {
-    object-fit: fill;
-    height: 50%;
-    width: 98.5%;
+.card {
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
+    width: 98.5%;
+    display: flex;
+    background-color: none;
 }
 
-#card-large:hover {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+.card-text {
+    font-size: 1.5rem;
+}
+
+.card-large {
+    width: 98.5%;
+    object-fit: fill;
+    border-radius: 8px;
 }
 
 .card-small {
     object-fit: fill;
-    height: 50%;
-    width: 49%;
+    width: 45%;
     border-radius: 8px;
-    transition: all 0.5s ease-in-out;
+    flex: 1;
 }
 
+.card-large:hover {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    transition: all 0.5s ease-in-out;
+}
 .card-small:hover {
     box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    transition: all 0.5s ease-in-out;
 }
 
 .logos {
